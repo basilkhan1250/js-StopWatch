@@ -38,6 +38,8 @@ body {
     width: 230px;
     border-radius: 50px;
     font-size: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
 .resetbtn:hover {
@@ -59,6 +61,8 @@ body {
     width: 230px;
     border-radius: 50px;
     font-size: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
 
 }
 
@@ -81,6 +85,8 @@ body {
     width: 230px;
     border-radius: 50px;
     font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
 
 }
 
@@ -92,5 +98,4 @@ body {
     width: 200px;
     border-radius: 50px;
     font-size: 25px;
-    transition: 0.4s;
 }
