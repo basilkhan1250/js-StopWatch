@@ -72,3 +72,13 @@ function reset() {
     let p2 = document.querySelector('.minutes').innerHTML = "00"
     let p3 = document.querySelector('.hour').innerHTML = "00"
 }
+
+
+
+
+
+
+
+
+
+
