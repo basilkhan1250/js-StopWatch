@@ -27,11 +27,12 @@
 let second = 0
 let minutes = 0
 let hour = 0
+
 let clockStarted = false
-const p = document.querySelector('.miliseconds')
-const p1 = document.querySelector('.second')
-const p2 = document.querySelector('.minutes')
-const p3 = document.querySelector('.hour')
+let p = document.querySelector('.miliseconds')
+let p1 = document.querySelector('.second')
+let p2 = document.querySelector('.minutes')
+let p3 = document.querySelector('.hour')
 
 function clock() {
     second++
@@ -46,15 +47,28 @@ function clock() {
         minutes = 0
         p2.innerHTML = hour
     }
+    if (timesecond === clockStop) {
+        second++
+        p.innerHTML = second
+    }
 }
 let timeseconds;
 function timesecond() {
-    if(clockStarted) return
+    if (clockStarted) return
     clockStarted = true
     timeseconds = setInterval(clock, 10)
 }
-function reset() {
+function clockStop() {
     clearInterval(timeseconds)
     clockStarted = false
-    console.log(timeseconds)
+}
+function reset() {
+    clockStarted = false
+    second = 0
+    minutes = 0
+    hour = 0
+    let p = document.querySelector('.miliseconds').innerHTML = "00"
+    let p1 = document.querySelector('.second').innerHTML = "00"
+    let p2 = document.querySelector('.minutes').innerHTML = "00"
+    let p3 = document.querySelector('.hour').innerHTML = "00"
 }
