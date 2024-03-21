@@ -41,7 +41,7 @@ function clock() {
         P.innerHTML = miliseconds
         console.log(miliseconds)
     }
-    if (miliseconds === 100) {
+    if (miliseconds === 99) {
         second++
         miliseconds = 0
         p1.innerHTML = second
@@ -100,10 +100,10 @@ function reset() {
     minutes = 0
     hour = 0
     miliseconds = 0
-    let p = document.querySelector('.miliseconds').innerHTML = "00"
-    let p1 = document.querySelector('.second').innerHTML = "00"
-    let p2 = document.querySelector('.minutes').innerHTML = "00"
-    let p3 = document.querySelector('.hour').innerHTML = "00"
+    document.querySelector('.miliseconds').innerHTML = "00"
+    document.querySelector('.second').innerHTML = "00"
+    document.querySelector('.minutes').innerHTML = "00"
+    document.querySelector('.hour').innerHTML = "00"
 }
 
 

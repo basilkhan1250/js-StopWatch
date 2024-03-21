@@ -6,8 +6,9 @@
 body {
     background-color: #b6465f;
     color: white;
-    font-family:monospace;
+    font-family: monospace;
 }
+
 .head {
     margin-top: 30px;
     display: flex;
