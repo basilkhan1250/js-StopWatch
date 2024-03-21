@@ -72,3 +72,33 @@ function reset() {
     let p2 = document.querySelector('.minutes').innerHTML = "00"
     let p3 = document.querySelector('.hour').innerHTML = "00"
 }
+
+
+
+
+
+
+
+
+
+
+
+let names = {
+
+
+
+        person1 : {
+            name : "Basil",
+            age : 19,
+            city : "Karachi",
+             },
+
+
+
+    name2 : "Alyan",
+    age : 20,
+    name3 : "Shayan",
+    name4 : "Shahzain",
+    name5 : "Arsalan",
+}
+console.log(names.person1)
